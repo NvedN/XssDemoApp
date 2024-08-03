@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>House Renting Agency</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="header">
+    <h1>Welcome to the House Renting Agency</h1>
+    <p class="credits">Your search: <span th:text="${searchInput}"></span></p>
+    <a href="/logout" class="link-button">Logout</a>
+</div>
+
+<form action="/main" method="GET" class="search">
+    <label for="search">Search by Metro Station:</label>
+    <input type="text" name="search" id="search">
+    <button type="submit">Search</button>
+</form>
+
+<h2>Available Houses:</h2>
+<div th:each="house : ${houses}">
+    <div class="post-card">
+        <div class="house-perk">
+            <span class="post-title">Street:</span>
+            <span th:text="${house.street}"></span>
+        </div>
+        <div class="house-perk">
+            <span class="post-title">Metro Station:</span>
+            <span th:text="${house.metro}"></span>
+        </div>
+        <div class="house-perk">
+            <span class="post-title">Square:</span>
+            <span th:text="${house.square}"></span> sq. meters
+        </div>
+        <div class="house-perk">
+            <span class="post-title">Floor:</span>
+            <span th:text="${house.floor}"></span>
+        </div>
+        <div class="house-perk">
+            <span class="post-title">Price:</span>
+            <span th:text="${house.price}"></span> rubles
+        </div>
+    </div>
+</div>
+</body>
+</html>

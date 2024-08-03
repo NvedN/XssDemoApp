@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'RFDewi-Bold';
+    src: local('RF Dewi Bold');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RFDewi-Regular';
+    src: local('RF Dewi');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'RFDewi-Regular', sans-serif;
+    background-color: #FFFFFF;
+    color: #020019;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header {
+    color: white;
+    background-color: #4A00EF;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    max-width: 50%;
+    margin-top: -33vh;
+}
+
+.post-card {
+    border: 1px solid #D3D3DD;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: calc(66.66% - 20px);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+.post-title {
+    font-size: 1.5em;
+    color: #4A00EF;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'RFDewi-Bold', sans-serif;
+    color: #4A00EF;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+form.search {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 15px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Override styles for the search form labels and buttons */
+form.search label {
+    color: #4A00EF;
+}
+
+form.search input[type="submit"] {
+    background-color: #4A00EF;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+form.search input[type="submit"]:hover {
+    background-color: #D3D3DD;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #020019;
+}
+
+input,
+select,
+textarea {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4A00EF;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+input[type="submit"]:hover {
+    background-color: #6f36eb;
+}
+
+.link-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: underline;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+}
+
+.post-card span {
+    font-size: 1em; /* Adjust the font-size as needed */
+}
