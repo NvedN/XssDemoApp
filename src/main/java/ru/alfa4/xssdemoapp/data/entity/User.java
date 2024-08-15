@@ -1,4 +1,4 @@
-package ru.alfa4.xssdemoapp.data;
+package ru.alfa4.xssdemoapp.data.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>ru.alfa4</groupId>
-    <artifactId>XssDemoApp</artifactId>
+    <artifactId>XSS1_task</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>XssDemoApp</name>
     <description>XssDemoApp</description>

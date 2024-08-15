@@ -1,4 +1,4 @@
-package ru.alfa4.xssdemoapp.data;
+package ru.alfa4.xssdemoapp.data.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

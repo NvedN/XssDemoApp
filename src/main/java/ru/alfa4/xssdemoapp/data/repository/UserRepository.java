@@ -1,6 +1,7 @@
-package ru.alfa4.xssdemoapp.data;
+package ru.alfa4.xssdemoapp.data.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import ru.alfa4.xssdemoapp.data.entity.User;
 
 import java.util.Optional;
 

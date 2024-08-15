@@ -34,7 +34,7 @@ public class SecurityConfig {
     http.authorizeHttpRequests(
             authorize ->
                 authorize
-                    .requestMatchers("/login", "/register", "/static/**")
+                    .requestMatchers("/login", "/register")
                     .permitAll()
                     .anyRequest()
                     .authenticated())
@@ -53,6 +53,6 @@ public class SecurityConfig {
 
   @Bean
   public WebSecurityCustomizer webSecurityCustomizer() {
-    return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/h2-console/**"));
+    return (web) -> web.ignoring().requestMatchers(new AntPathRequestMatcher("/static/**"));
   }
 }
